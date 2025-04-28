@@ -43,12 +43,12 @@ export default App;
 
 ## Installation
 
-You can install the `next-tooltip` package via npm or yarn.
+You can install the `next-tooltip-react` package via npm or yarn.
 
 ### Using npm:
 
-`npm install next-tooltip`
+`npm install next-tooltip-react`
 
 ### Using yarn:
 
-`yarn add next-tooltip`
+`yarn add next-tooltip-react`
