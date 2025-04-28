@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "A simple and customizable tooltip component for React applications, built with TypeScript.",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolpinkzz/next-tooltip-react.git"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "tsc && node dist/index.js"
+    "start": "tsc && node dist/index.js",
+    "prepare": "npm run build"
   },
   "keywords": [
     "tooltip",
     "react",
-    "next-tooltip"
+    "next-tooltip",
+    "typescript"
   ],
   "author": "Pratik Yadav",
   "license": "MIT",
@@ -19,6 +25,15 @@
   },
   "dependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  }
+    "react-dom": "^17.0.0",
+    "react-icons": "^4.3.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/coolpinkzz/next-tooltip-react/issues"
+  },
+  "homepage": "https://github.com/coolpinkzz/next-tooltip-react#readme"
 }
