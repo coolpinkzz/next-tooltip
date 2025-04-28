@@ -1,7 +1,7 @@
 {
   "name": "next-tooltip-react",
   "version": "1.0.0",
-  "description": "A simple tooltip component for React",
+  "description": "A simple and customizable tooltip component for React applications, built with TypeScript.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
