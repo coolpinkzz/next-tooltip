@@ -10,7 +10,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import React, { useState } from "react";
-var CustomTooltip = function (_a) {
+var Tooltip = function (_a) {
     var icon = _a.icon, content = _a.content, _b = _a.position, position = _b === void 0 ? "top" : _b;
     var _c = useState(false), visible = _c[0], setVisible = _c[1];
     var showTooltip = function () { return setVisible(true); };
@@ -33,4 +33,4 @@ var CustomTooltip = function (_a) {
         React.createElement("div", null, icon),
         visible && (React.createElement("div", { className: "tooltip-text", style: __assign(__assign({ position: "absolute", background: "#333", color: "#fff", padding: "10px", borderRadius: "8px", fontSize: "14px", minWidth: "250px" }, getPositionStyles()), { zIndex: 1000 }) }, content))));
 };
-export default CustomTooltip;
+export default Tooltip;

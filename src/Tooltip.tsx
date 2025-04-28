@@ -1,22 +1,18 @@
-import React, { useState, ReactNode } from "react";
+import React, { useState } from "react";
 
 interface CustomTooltipProps {
-  icon: ReactNode;
-  content: ReactNode;
-  position?: "top" | "right" | "bottom" | "left";
+  icon: React.ReactNode;
+  content: React.ReactNode;
+  position?: "top" | "bottom" | "left" | "right";
 }
 
-const CustomTooltip: React.FC<CustomTooltipProps> = ({
-  icon,
-  content,
-  position = "top",
-}) => {
+const Tooltip = ({ icon, content, position = "top" }: CustomTooltipProps) => {
   const [visible, setVisible] = useState(false);
 
   const showTooltip = () => setVisible(true);
   const hideTooltip = () => setVisible(false);
 
-  const getPositionStyles = (): React.CSSProperties => {
+  const getPositionStyles = () => {
     switch (position) {
       case "top":
         return { bottom: "100%", left: "50%", transform: "translateX(-50%)" };
@@ -61,4 +57,4 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({
   );
 };
 
-export default CustomTooltip;
+export default Tooltip;
